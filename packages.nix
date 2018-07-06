@@ -16,11 +16,13 @@ buildEnv {
     fzf
     gawk
     gnugrep
+    gnupg
     gnutar
     htop
     imagemagickBig
     less
     p7zip
+    pinentry
     ripgrep
     rxvt_unicode-with-plugins
     screen
