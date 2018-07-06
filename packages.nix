@@ -77,6 +77,7 @@ buildEnv {
     fontconfig
     haskellPackages.taffybar
     haskellPackages.xmobar
+    mplayer
     ncpamixer
     pavucontrol
     python36Packages.mps-youtube
@@ -85,6 +86,7 @@ buildEnv {
     xfce.thunar-archive-plugin
     xfce.thunar-volman
     rofi
+    vlc
   
     # keybase
     kbfs
