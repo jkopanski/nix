@@ -1,5 +1,6 @@
 with import <nixpkgs> {};
-
+let unstable = import <unstable> {};
+in
 buildEnv {
   name = "nat";
   paths = [
@@ -57,8 +58,10 @@ buildEnv {
     binutils
     clang
     cmake
+    unstable.dhall
     emacs
     gnumake
+    unstable.haskellPackages.dhall-nix
     llvm
     nodejs-9_x { enableNpm = true; }
     pkgconfig
@@ -66,6 +69,9 @@ buildEnv {
     sloccount
   
     # haskell
+    cabal-install
+    cabal2nix
+    nix-prefetch-git
     stack
     stack2nix
     
