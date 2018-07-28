@@ -6,12 +6,12 @@ buildEnv {
   paths = [
     coreutils
     nix-prefetch-scripts
-  
+
     bash-completion
     nix-bash-completions
     nix-zsh-completions
     zsh-completions
-  
+
     fd
     findutils
     fzf
@@ -36,22 +36,22 @@ buildEnv {
     xz
     zsh
     zsh-syntax-highlighting
-  
+
     # spell check
     aspell
     aspellDicts.en
     aspellDicts.en-computers
     aspellDicts.en-science
     aspellDicts.pl
-    hunspell 
+    hunspell
     hunspellDicts.en-us
     hunspellDicts.en-gb-ize
     ispell
-  
+
     # browsers
     firefox
     chromium
-  
+
     # dev
     autoconf
     automake
@@ -67,24 +67,25 @@ buildEnv {
     pkgconfig
     postgresql
     sloccount
-  
+
     # haskell
     cabal-install
     cabal2nix
     nix-prefetch-git
     stack
     stack2nix
-    
+
     # network
     cacert
     nmap
     rsync
-  
+
     #
     feh
     fontconfig
     haskellPackages.taffybar
     haskellPackages.xmobar
+    libreoffice
     mplayer
     ncpamixer
     pavucontrol
@@ -95,12 +96,12 @@ buildEnv {
     xfce.thunar-volman
     rofi
     vlc
-  
+
     # keybase
     kbfs
     keybase
     keybase-gui
-  
+
     # games
     steam
   ];
