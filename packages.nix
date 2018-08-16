@@ -64,6 +64,7 @@ buildEnv {
     gnumake
     unstable.haskellPackages.bhoogle
     unstable.haskellPackages.dhall-nix
+    unstable.haskellPackages.dotenv
     unstable.haskellPackages.hoogle
     pkgconfig
     sloccount
