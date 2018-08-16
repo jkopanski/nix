@@ -1,5 +1,6 @@
 with import <nixpkgs> {};
-let unstable = import <unstable> {};
+let
+  unstable = import <unstable> {};
 in
 buildEnv {
   name = "nat";
@@ -61,6 +62,7 @@ buildEnv {
     unstable.dhall
     unstable.emacs
     gnumake
+    unstable.haskellPackages.bhoogle
     unstable.haskellPackages.dhall-nix
     pkgconfig
     sloccount
@@ -77,7 +79,7 @@ buildEnv {
     nmap
     rsync
 
-    #
+    # utils
     feh
     fontconfig
     haskellPackages.taffybar
