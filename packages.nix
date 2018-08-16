@@ -59,13 +59,10 @@ buildEnv {
     clang
     cmake
     unstable.dhall
-    emacs
+    unstable.emacs
     gnumake
     unstable.haskellPackages.dhall-nix
-    llvm
-    nodejs-9_x { enableNpm = true; }
     pkgconfig
-    postgresql
     sloccount
 
     # haskell
@@ -95,6 +92,8 @@ buildEnv {
     xfce.thunar-archive-plugin
     xfce.thunar-volman
     rofi
+    scrot
+    transmission-gtk
     vlc
 
     # keybase
