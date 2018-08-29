@@ -66,6 +66,7 @@ buildEnv {
     unstable.haskellPackages.dhall-nix
     unstable.haskellPackages.dotenv
     unstable.haskellPackages.hoogle
+    unstable.haskellPackages.hpack
     pkgconfig
     sloccount
 
@@ -89,6 +90,7 @@ buildEnv {
     libreoffice
     mplayer
     ncpamixer
+    obs-studio
     pavucontrol
     python36Packages.mps-youtube
     xdg_utils
@@ -99,6 +101,7 @@ buildEnv {
     scrot
     transmission-gtk
     vlc
+    weechat
 
     # keybase
     kbfs
