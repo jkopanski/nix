@@ -77,6 +77,14 @@ buildEnv {
     stack
     stack2nix
 
+    # ee
+    unstable.gtkwave
+    unstable.symbiyosys
+    unstable.verilator
+    unstable.verilog
+    unstable.yosys
+    unstable.haskellPackages.clash
+
     # network
     cacert
     nmap
