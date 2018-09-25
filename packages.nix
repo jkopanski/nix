@@ -91,6 +91,7 @@ buildEnv {
     rsync
 
     # utils
+    (unstable.haskellPackages.callPackage ./nix/clifm.nix {})
     feh
     fontconfig
     haskellPackages.taffybar
