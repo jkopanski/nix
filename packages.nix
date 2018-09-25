@@ -83,7 +83,6 @@ buildEnv {
     unstable.verilator
     unstable.verilog
     unstable.yosys
-    unstable.haskellPackages.clash
 
     # network
     cacert
