@@ -110,6 +110,7 @@ buildEnv {
     transmission-gtk
     vlc
     weechat
+    unstable.zathura
 
     # keybase
     kbfs
