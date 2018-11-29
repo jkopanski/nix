@@ -109,7 +109,7 @@ buildEnv {
     scrot
     transmission-gtk
     vlc
-    weechat
+    unstable.weechat
     unstable.zathura
 
     # keybase
