@@ -59,6 +59,7 @@ buildEnv {
     binutils
     clang
     cmake
+    unstable.direnv
     unstable.dhall
     unstable.emacs
     gnumake
