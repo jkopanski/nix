@@ -59,6 +59,7 @@ buildEnv {
     binutils
     clang
     cmake
+    unstable.direnv
     unstable.dhall
     unstable.emacs
     gnumake
@@ -95,6 +96,7 @@ buildEnv {
     fontconfig
     haskellPackages.taffybar
     haskellPackages.xmobar
+    unstable.inkscape
     libreoffice
     mplayer
     ncpamixer
