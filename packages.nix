@@ -1,6 +1,6 @@
-with import <nixpkgs> {};
+with import <nixos> {};
 let
-  unstable = import <unstable> {};
+  unstable = import <nixpkgs> {};
 in
 buildEnv {
   name = "nat";
@@ -120,6 +120,6 @@ buildEnv {
     keybase-gui
 
     # games
-    steam
+    #steam
   ];
 }
