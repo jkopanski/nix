@@ -63,8 +63,8 @@ buildEnv {
     unstable.dhall
     unstable.emacs
     gnumake
-    unstable.haskellPackages.bhoogle
-    unstable.haskellPackages.dhall-nix
+    haskellPackages.bhoogle
+    haskellPackages.dhall-nix
     unstable.haskellPackages.dotenv
     unstable.haskellPackages.hoogle
     unstable.haskellPackages.hpack
@@ -84,6 +84,7 @@ buildEnv {
     unstable.verilator
     unstable.verilog
     unstable.yosys
+    (callPackage ./nix/firrtl-interpreter.nix {})
 
     # network
     cacert
@@ -91,7 +92,7 @@ buildEnv {
     rsync
 
     # utils
-    (unstable.haskellPackages.callPackage ./nix/clifm.nix {})
+    # (unstable.haskellPackages.callPackage ./nix/clifm.nix {})
     feh
     fontconfig
     haskellPackages.taffybar
@@ -101,6 +102,7 @@ buildEnv {
     mplayer
     ncpamixer
     obs-studio
+    pandoc
     pavucontrol
     python36Packages.mps-youtube
     xdg_utils
@@ -109,6 +111,7 @@ buildEnv {
     xfce.thunar-volman
     rofi
     scrot
+    texlive.combined.scheme-basic
     transmission-gtk
     vlc
     unstable.weechat
@@ -120,6 +123,11 @@ buildEnv {
     keybase-gui
 
     # games
-    #steam
+    steam
+    unstable.pcsxr
+    unstable.pcsx2
+    unstable.rpcs3
+    unstable.dolphinEmu
+    unstable.xboxdrv
   ];
 }
