@@ -65,7 +65,6 @@ buildEnv {
     gnumake
     haskellPackages.bhoogle
     haskellPackages.dhall-nix
-    unstable.haskellPackages.dotenv
     unstable.haskellPackages.hoogle
     unstable.haskellPackages.hpack
     pkgconfig
