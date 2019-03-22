@@ -1,6 +1,9 @@
-{ stdenv, lib, fetchurl, makeWrapper, jre, scala
-, firrtl
+{ stdenv, callPackage, lib, fetchurl, makeWrapper, jre, scala
 }:
+
+let
+  firrtl = callPackage ./firrtl.nix {};
+in
 
 with stdenv.lib;
 stdenv.mkDerivation rec {
@@ -23,7 +26,7 @@ stdenv.mkDerivation rec {
     mkdir -p $out/lib
     cp ${src} $out/lib/firrtl-interpreter.jar
     makeWrapper ${jre}/bin/java $out/bin/firrtl-interpreter \
-      --add-flags "-cp ${scala}/lib/scala-library.jar:$out/lib/firrtl-interpreter.jar firrtl_interpreter.Driver"
+    --add-flags "-cp ${scala}/lib/scala-library.jar:${firrtl}/lib/firrtkl.jar:$out/lib/firrtl-interpreter.jar firrtl_interpreter.Driver"
   '';
 
   meta = {
