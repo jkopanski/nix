@@ -63,7 +63,8 @@ buildEnv {
     unstable.dhall
     unstable.emacs
     gnumake
-    haskellPackages.bhoogle
+    # marked as broken
+    # haskellPackages.bhoogle
     haskellPackages.dhall-nix
     unstable.haskellPackages.hoogle
     unstable.haskellPackages.hpack
