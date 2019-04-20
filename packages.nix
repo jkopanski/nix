@@ -65,7 +65,7 @@ buildEnv {
     gnumake
     # marked as broken
     # haskellPackages.bhoogle
-    haskellPackages.dhall-nix
+    # haskellPackages.dhall-nix
     unstable.haskellPackages.hoogle
     unstable.haskellPackages.hpack
     pkgconfig
