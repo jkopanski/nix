@@ -78,6 +78,14 @@ buildEnv {
     stack
     stack2nix
 
+    # accounting
+    unstable.haskellPackages.hledger
+    # unstable.haskellPackages.hledger-chart
+    unstable.haskellPackages.hledger-iadd
+    unstable.haskellPackages.hledger-interest
+    # unstable.haskellPackages.hledger-irr
+    unstable.haskellPackages.hledger-ui
+
     # ee
     unstable.gtkwave
     unstable.symbiyosys
