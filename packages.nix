@@ -128,5 +128,7 @@ buildEnv {
     unstable.rpcs3
     unstable.dolphinEmu
     unstable.xboxdrv
+
+    unstable.slack
   ];
 }
