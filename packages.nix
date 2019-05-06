@@ -131,7 +131,7 @@ buildEnv {
     keybase-gui
 
     # games
-    steam
+    unstable.steam
     unstable.pcsxr
     unstable.pcsx2
     unstable.rpcs3
