@@ -125,6 +125,11 @@ buildEnv {
     unstable.weechat
     unstable.zathura
 
+    # cad
+    unstable.openscad
+    unstable.freecad
+    unstable.librecad
+
     # keybase
     kbfs
     keybase
