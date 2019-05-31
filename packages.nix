@@ -33,6 +33,7 @@ buildEnv {
     stow
     time
     tmux
+    unstable.alacritty
     unzip
     xz
     zsh
