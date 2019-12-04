@@ -23,6 +23,11 @@ buildEnv {
     htop
     imagemagickBig
     less
+    pass
+    passExtensions.audit
+    passExtensions.pass-genphrase
+    passExtensions.pass-otp
+    passExtensions.pass-update
     p7zip
     pinentry
     ripgrep
