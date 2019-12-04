@@ -66,23 +66,24 @@ buildEnv {
     clang
     cmake
     unstable.direnv
-    unstable.dhall
+    dhall
     unstable.emacs
     gnumake
     # marked as broken
     # haskellPackages.bhoogle
     # haskellPackages.dhall-nix
+    haskellPackages.dhall-to-cabal
     unstable.haskellPackages.hoogle
     unstable.haskellPackages.hpack
     pkgconfig
     sloccount
+    unstable.vscodium
 
     # haskell
     cabal-install
     cabal2nix
     nix-prefetch-git
     stack
-    stack2nix
 
     # accounting
     unstable.haskellPackages.hledger
@@ -96,7 +97,7 @@ buildEnv {
     unstable.gtkwave
     unstable.symbiyosys
     unstable.verilator
-    unstable.verilog
+    # unstable.verilog
     unstable.yosys
     (callPackage ./nix/firrtl-interpreter.nix {})
 
@@ -125,9 +126,10 @@ buildEnv {
     xfce.thunar-volman
     rofi
     scrot
-    texlive.combined.scheme-basic
+    texlive.combined.scheme-medium
     transmission-gtk
     vlc
+    haskellPackages.patat
     unstable.weechat
     unstable.zathura
 
@@ -143,10 +145,11 @@ buildEnv {
 
     # games
     unstable.steam
-    unstable.pcsxr
-    unstable.pcsx2
-    unstable.rpcs3
-    unstable.dolphinEmu
+    # unstable.pcsxr
+    # unstable.pcsx2
+    # unstable.rpcs3
+    # unstable.dolphinEmu
+    (callPackage ./nix/devilutionX.nix {})
     unstable.xboxdrv
 
     unstable.slack
